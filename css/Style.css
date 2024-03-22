@@ -3,7 +3,11 @@
     margin: 0;
     box-sizing: border-box;
 }
-
+@media (min-width:320px) { 
+    video{
+        width: 100vh;
+        height: 100vh;
+}
 nav ul {
     list-style: none;
 }
@@ -16,5 +20,26 @@ nav ul li{
     flex-wrap: nowrap;
     justify-content: center;
     background-color: #dcdcdc;
-    font-size: 13px;
+    height: 70px;
+    width: 100vh;
+    align-items: center;
+    font-size: 20px;
+}
+div ul li {
+    display: inline;
+}
+.packs{
+    display: grid;
+    height: 600px;
+    width: 100vh;
+    justify-content: center;
+}
+div .item-1, .item-2, .item-3, .item-4 {
+background-color: black;
+display: grid;
+width: 150px;
+height: 150px;
+align-items: center;
+justify-content: center;
+}
 }
