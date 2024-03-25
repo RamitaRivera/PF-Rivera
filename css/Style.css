@@ -14,6 +14,9 @@ nav ul {
 nav ul li{
     display: inline;
 }
+h1 {
+    width: 100vh;
+}
 .navegador{
     display: flex;
     flex-direction: row;
@@ -28,18 +31,33 @@ nav ul li{
 div ul li {
     display: inline;
 }
-.packs{
+.pack-times{
     display: grid;
     height: 600px;
     width: 100vh;
     justify-content: center;
+} 
+.pack-list{
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 300px 300px;
+    column-gap: 30px;
+    row-gap: 30px;
 }
-div .item-1, .item-2, .item-3, .item-4 {
+.item-1, .item-2, .item-3, .item-4 {
 background-color: black;
+border-radius: 5%;
 display: grid;
-width: 150px;
-height: 150px;
+width: 250px;
+height: 250px;
 align-items: center;
 justify-content: center;
+}
+.pack-letra{
+    color: white;
+    text-decoration: none;
+}
+.parrafo{
+    width: 100vh;
 }
 }
