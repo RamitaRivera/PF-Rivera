@@ -85,4 +85,20 @@ justify-content: center;
     width: 25px;
     height: 25px;
 }
+.at-home{
+    background-color: black;
+    color: white; 
+}
+.list-pack{
+    list-style: none;
+}
+.list-pack li::before{
+content: "▫️";
+}
+.h1-pack{
+    display: flex;
+justify-content: center;
+color: pink;
+text-decoration: underline;
+}
 }
