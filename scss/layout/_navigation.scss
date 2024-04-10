@@ -1,0 +1,31 @@
+nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    background-color: $color-quaternary;
+    height: 70px;
+    width: 100%;
+    align-items: center;
+    font-size: 20px;
+    ul {
+        list-style: none;
+        li {
+            display: inline;
+        }
+    }
+    a{
+        text-decoration: none;
+        color:  black;
+    }
+}
+//modificaiones para media query 768px
+@include for-destok-up{
+.logo-nav{
+    display: grid;
+    justify-content: center;
+}
+nav{
+    width: 100%;
+}
+}

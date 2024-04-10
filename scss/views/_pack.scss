@@ -1,0 +1,16 @@
+.at-home{
+    background-color: $color-primary;
+    color: $color-secondary; 
+}
+.list-pack{
+    list-style: none;
+}
+.list-pack li::before{
+content: "▫️";
+}
+.h1-pack{
+    display: flex;
+justify-content: center;
+color: pink;
+text-decoration: underline;
+}

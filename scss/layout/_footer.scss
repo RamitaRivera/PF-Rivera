@@ -1,0 +1,33 @@
+.footer{
+    width: 100vh;
+    background-color: $color-tertiary;
+    display: grid;
+    justify-content: center;
+    .footer-list{
+        color: $color-secondary;
+        a{
+            color: $color-secondary;
+            text-decoration: none;
+            .logo-instagram{
+                width: 15px;
+                height: 15px;
+            }
+            .logo-twitter{
+                width: 25px;
+                height: 25px;
+            }
+        }
+    }
+}
+//cambios para media query 768px
+@include for-destok-up{
+.footer{
+    width: 100%;
+}
+.footer-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 100px;
+}
+}

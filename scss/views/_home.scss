@@ -1,0 +1,49 @@
+.pack-times{
+    display: grid;
+    height: 600px;
+    width: 100%;
+    justify-content: center;
+} 
+.pack-list{
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 300px 300px;
+    column-gap: 30px;
+    row-gap: 30px;
+}
+.item-1, .item-2, .item-3, .item-4 {
+    background-color: $color-primary;
+    border-radius: 5%;
+    display: grid;
+    width: 250px;
+    height: 250px;
+    align-items: center;
+    justify-content: center;
+    }
+    .pack-letra{
+        color: $color-secondary;
+        text-decoration: none;
+    }
+.titulo-pack{
+    color: pink;
+}
+//modificaciones para media query 768px
+@include for-destok-up{
+.pack-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: none;
+    justify-content: center;
+}
+.pack{
+    display: flex;
+    justify-content: center;
+    height: 450px;
+}
+.titulo-pack{
+    width: 100%;
+}
+.parrafo{
+    width: 100%;
+}
+}
