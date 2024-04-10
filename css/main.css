@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: lora;
+  src: url(/assets/fonts/Merriweather-Regular.ttf);
+}
 .body-main {
   background-image: linear-gradient(to bottom, #000, #fff);
 }
@@ -79,6 +83,7 @@ header .header-img {
 
 .titulo-pack {
   color: pink;
+  font-family: lora, sans-serif;
 }
 
 @media (min-width: 1024px) {
@@ -118,6 +123,7 @@ header .header-img {
   justify-content: center;
   color: pink;
   text-decoration: underline;
+  font-family: lora, sans-serif;
 }
 
 .footer {
