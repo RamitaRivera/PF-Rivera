@@ -1,31 +1,19 @@
-nav{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
+.list{
+    padding-top: 25px;
+}
+.nav__info{
     background-color: $color-quaternary;
-    height: 70px;
-    width: 100%;
-    align-items: center;
+    text-decoration: none;
+    display: inline;
+    color: $color-primary;
     font-size: 20px;
-    ul {
-        list-style: none;
-        li {
-            display: inline;
-        }
-    }
-    a{
-        text-decoration: none;
-        color:  black;
-    }
 }
-//modificaiones para media query 768px
 @include for-destok-up{
-.logo-nav{
+.list{
+    list-style: none;
     display: grid;
-    justify-content: center;
-}
-nav{
-    width: 100%;
+    grid-template-columns: 1fr 70px 50px 1fr;
+    column-gap: 50px;
+    justify-content: flex-start;
 }
 }

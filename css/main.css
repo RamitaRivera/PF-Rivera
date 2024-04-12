@@ -13,35 +13,25 @@
   background-image: linear-gradient(to bottom, #000, #fff);
 }
 
-nav {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
+.list {
+  padding-top: 25px;
+}
+
+.nav__info {
   background-color: #dcdcdc;
-  height: 70px;
-  width: 100%;
-  align-items: center;
-  font-size: 20px;
-}
-nav ul {
-  list-style: none;
-}
-nav ul li {
-  display: inline;
-}
-nav a {
   text-decoration: none;
-  color: black;
+  display: inline;
+  color: #000;
+  font-size: 20px;
 }
 
 @media (min-width: 1024px) {
-  .logo-nav {
+  .list {
+    list-style: none;
     display: grid;
-    justify-content: center;
-  }
-  nav {
-    width: 100%;
+    grid-template-columns: 1fr 70px 50px 1fr;
+    column-gap: 50px;
+    justify-content: flex-start;
   }
 }
 header .header-img {
