@@ -10,15 +10,15 @@
   src: url(/assets/fonts/Merriweather-Regular.ttf);
 }
 .body-main {
-  background-image: linear-gradient(to bottom, #000, #fff);
+  background-color: #f8f6f6;
 }
 
 .list {
-  padding-top: 25px;
+  list-style: none;
+  padding: 0;
 }
 
 .nav__info {
-  background-color: #dcdcdc;
   text-decoration: none;
   display: inline;
   color: #000;
@@ -27,18 +27,88 @@
 
 @media (min-width: 1024px) {
   .list {
+    padding-top: 20px;
     list-style: none;
     display: grid;
-    grid-template-columns: 1fr 70px 50px 1fr;
+    grid-template-columns: 1fr 60px 50px 1fr;
     column-gap: 50px;
     justify-content: flex-start;
   }
 }
-header .header-img {
+header {
+  display: grid;
+  height: 200px;
+  align-items: center;
+}
+
+.times-h1 {
+  font-family: lora, sans-serif;
+}
+
+.h1-1 {
   display: flex;
   justify-content: center;
+}
+
+.h1-2 {
+  display: flex;
+  justify-content: center;
+}
+
+.times-parrafo {
+  font-family: lora, sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.parrafo-header {
+  font-size: 20px;
+}
+
+.section-corporativos {
+  background-color: black;
+  color: white;
+}
+
+.div-corporativo-img {
+  display: flex;
+  justify-content: center;
+}
+
+.foto-corporativo {
+  width: 300px;
+}
+
+.section-fiesta {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.foto-fiesta {
+  width: 300px;
+  mask-image: linear-gradient(white 80%, transparent);
+}
+
+.div-fiesta-img {
+  display: flex;
+  justify-content: center;
+}
+
+.pack {
+  display: flex;
+  justify-content: center;
+}
+
+.div-pack {
   width: 100%;
-  background-color: #000;
+}
+
+.h2-pack {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  color: white;
+  width: 100%;
 }
 
 .pack-times {
@@ -55,6 +125,13 @@ header .header-img {
   column-gap: 30px;
   row-gap: 30px;
 }
+.pack-list li {
+  list-style: none;
+}
+
+.pack-list:hover > :not(:hover) {
+  opacity: 0.4;
+}
 
 .item-1, .item-2, .item-3, .item-4 {
   background-color: #000;
@@ -64,11 +141,13 @@ header .header-img {
   height: 150px;
   align-items: center;
   justify-content: center;
-}
-
-.pack-letra {
   color: #fff;
   text-decoration: none;
+  transition: opacity 0.6s ease;
+}
+
+.pack-box {
+  transition: opacity 0.6s ease;
 }
 
 .titulo-pack {
@@ -77,6 +156,40 @@ header .header-img {
 }
 
 @media (min-width: 1024px) {
+  .section-corporativos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+  .div-corporativo-img {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .foto-corporativo {
+    height: 700px;
+    width: 500px;
+  }
+  .div-corporativo-parrafo {
+    font-size: 20px;
+  }
+  .section-fiesta {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+  }
+  .div-fiesta-img {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .foto-fiesta {
+    height: 700px;
+    width: 500px;
+  }
+  .div-fiesta-parafo {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+  }
   .pack-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -100,8 +213,12 @@ header .header-img {
   .titulo-pack {
     width: 100%;
   }
+  .parrafo-packs {
+    font-size: 18px;
+  }
   .parrafo {
     width: 100%;
+    font-size: 18px;
   }
 }
 .at-home {

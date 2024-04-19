@@ -1,8 +1,25 @@
 header{
-    .header-img{
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        background-color: $color-primary;
-        }
+    display: grid;
+    height: 200px;
+    align-items: center;
+
+}
+.times-h1{
+    font-family: lora, sans-serif;
+}
+.h1-1{
+display: flex;
+justify-content: center;
+}
+.h1-2{
+    display: flex;
+    justify-content: center;
+}
+.times-parrafo{
+    font-family: lora, sans-serif;
+    display: flex;
+    justify-content: center;
+}
+.parrafo-header{
+    font-size: 20px;
 }

@@ -1,3 +1,40 @@
+.section-corporativos{
+    background-color: black;
+    color: white;
+}
+.div-corporativo-img{
+    display: flex;
+    justify-content: center;
+}
+.foto-corporativo{
+    width: 300px;
+}
+.section-fiesta{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.foto-fiesta{
+    width: 300px;
+    mask-image: linear-gradient(white 80%, transparent);
+}
+.div-fiesta-img{
+    display: flex;
+    justify-content: center;
+}
+.pack{
+    display: flex;
+    justify-content: center;
+}
+.div-pack{
+    width: 100%;
+}
+.h2-pack{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    color: white;
+    width: 100%;
+}
 .pack-times{
     display: grid;
     height: 450px;
@@ -10,6 +47,12 @@
     grid-template-rows: 1fr 1fr;
     column-gap: 30px;
     row-gap: 30px;
+    li{
+        list-style: none;
+    }
+}
+.pack-list:hover > :not(:hover){
+    opacity:0.4;
 }
 .item-1, .item-2, .item-3, .item-4 {
     background-color: $color-primary;
@@ -19,18 +62,54 @@
     height: 150px;
     align-items: center;
     justify-content: center;
+    color: $color-secondary;
+    text-decoration: none;
+    transition: opacity 0.6s ease;
     }
-    .pack-letra{
-        color: $color-secondary;
-        text-decoration: none;
-    }
+.pack-box{
+    transition: opacity 0.6s ease;
+}
 .titulo-pack{
     color: pink;
     font-family: lora, sans-serif;
 }
 //modificaciones para media query 768px
 @include for-destok-up{
-.pack-list{
+.section-corporativos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+.div-corporativo-img{
+    display: flex;
+    justify-content: flex-start;
+}
+.foto-corporativo{
+height: 700px;
+width: 500px;
+}
+.div-corporativo-parrafo{
+    font-size: 20px;
+}
+.section-fiesta{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+}
+.div-fiesta-img{
+    display: flex;
+    justify-content: flex-end;
+}
+.foto-fiesta{
+    height: 700px;
+    width: 500px;
+}
+.div-fiesta-parafo{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+    .pack-list{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: none;
@@ -53,7 +132,11 @@
 .titulo-pack{
     width: 100%;
 }
+.parrafo-packs{
+    font-size: 18px;
+}
 .parrafo{
     width: 100%;
+    font-size: 18px;
 }
 }
