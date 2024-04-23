@@ -1,0 +1,51 @@
+.h3-servicios{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    background-color: $color-primary;
+    color: $color-secondary;
+}
+.parrafo-servicio{
+    font-size: 17px;
+}
+.main-servicios{
+    display: grid;
+    grid-template-columns: 1fr ;
+    justify-content: center;
+    align-content: center;
+    row-gap: 50px;
+}
+.div-servicios{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+}
+.img-servicios{    
+    width: 90px;
+}
+.img-servicio-ejemplo{
+    width: 100%;
+}
+.h6-servicios{
+    font-size: 20px;
+}
+@include for-destok-up{
+    .h3-servicios{
+        font-size: 40px;
+    }
+    .main-servicios{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .parrafo-servicio{
+        font-size: 25px;
+        width: 100%;
+    }
+    .img-servicio-ejemplo{
+        border-radius: 30px;
+        mask-image: linear-gradient(white 80%, transparent);
+    }
+}
+

@@ -1,0 +1,35 @@
+.body-nosotros{
+    background-color: #f8f6f6;
+}
+.h3-nosotros{
+    display: flex;
+    justify-content: center;
+}
+.div-nosotros{
+    display: flex;
+    align-items: center;
+}
+.img-nosotros{
+    width: 200px;
+}
+.img-evento-armado{
+    width: 100%;
+}
+.parrafo-nosotros{
+    font-size: 20px;
+}
+@include for-destok-up{
+    .parrafo-nosotros{
+        font-size: 22px;
+    }
+    .img-nosotros{
+        width: 400px;
+    }
+    .h3-nosotros{
+        font-size: 30px;
+    }
+    .div-nosotros{
+        display: flex;
+        flex-direction: column;
+    }
+}

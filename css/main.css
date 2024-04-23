@@ -155,6 +155,23 @@ header {
   font-family: lora, sans-serif;
 }
 
+.section-encuesta {
+  background-color: #000;
+  display: grid;
+  justify-content: center;
+  color: #fff;
+}
+
+.div-encuesta {
+  display: grid;
+  justify-content: center;
+}
+.div-encuesta a {
+  font-size: 150%;
+  display: flex;
+  justify-content: center;
+}
+
 @media (min-width: 1024px) {
   .section-corporativos {
     display: grid;
@@ -221,17 +238,22 @@ header {
     font-size: 18px;
   }
 }
+.flecha-back-nav {
+  text-decoration: none;
+  color: #000;
+}
+
+.nav-pack {
+  background-color: #fff;
+}
+
+.img-nav-pack {
+  width: 40px;
+}
+
 .at-home {
   background-color: #000;
   color: #fff;
-}
-
-.list-pack {
-  list-style: none;
-}
-
-.list-pack li::before {
-  content: "▫️";
 }
 
 .h1-pack {
@@ -242,6 +264,203 @@ header {
   font-family: lora, sans-serif;
 }
 
+.div-pack-h1 {
+  display: grid;
+  justify-content: center;
+}
+
+.div-packs {
+  display: grid;
+  justify-content: flex-start;
+}
+
+.list-pack {
+  list-style: none;
+}
+
+.list-pack li::before {
+  content: "▫️";
+}
+
+@media (min-width: 1024px) {
+  .section-pack {
+    display: grid;
+    justify-content: center;
+  }
+  .div-packs {
+    display: grid;
+    justify-content: flex-start;
+  }
+  .img-nav-pack {
+    width: 50px;
+  }
+}
+.body-encuesta {
+  background-color: #dcdcdc;
+}
+
+.h3-encuesta {
+  color: #000;
+  display: flex;
+  justify-content: center;
+}
+
+.texto-requerido {
+  color: red;
+  display: flex;
+  justify-content: center;
+}
+
+.contenedor-label-input {
+  display: grid;
+  justify-content: center;
+}
+
+.label-encuestaa {
+  color: #fff;
+}
+
+.footer-encuestaa {
+  display: grid;
+  justify-content: center;
+  align-content: flex-end;
+}
+
+.footer-formulario {
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 20px;
+}
+
+.footer-ig {
+  width: 20px;
+}
+
+.footer-tw {
+  width: 26px;
+}
+
+@media (min-width: 1024px) {
+  .contenedor-label-input {
+    font-size: 20px;
+  }
+  .h3-encuesta {
+    font-size: 30px;
+  }
+  .texto-requerido {
+    font-size: 25px;
+  }
+  .footer-formulario {
+    font-size: 40px;
+  }
+  .footer-ig {
+    width: 40px;
+  }
+  .footer-tw {
+    width: 50px;
+  }
+}
+.body-nosotros {
+  background-color: #f8f6f6;
+}
+
+.h3-nosotros {
+  display: flex;
+  justify-content: center;
+}
+
+.div-nosotros {
+  display: flex;
+  align-items: center;
+}
+
+.img-nosotros {
+  width: 200px;
+}
+
+.img-evento-armado {
+  width: 100%;
+}
+
+.parrafo-nosotros {
+  font-size: 20px;
+}
+
+@media (min-width: 1024px) {
+  .parrafo-nosotros {
+    font-size: 22px;
+  }
+  .img-nosotros {
+    width: 400px;
+  }
+  .h3-nosotros {
+    font-size: 30px;
+  }
+  .div-nosotros {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.h3-servicios {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  background-color: #000;
+  color: #fff;
+}
+
+.parrafo-servicio {
+  font-size: 17px;
+}
+
+.main-servicios {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-content: center;
+  row-gap: 50px;
+}
+
+.div-servicios {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 20px;
+}
+
+.img-servicios {
+  width: 90px;
+}
+
+.img-servicio-ejemplo {
+  width: 100%;
+}
+
+.h6-servicios {
+  font-size: 20px;
+}
+
+@media (min-width: 1024px) {
+  .h3-servicios {
+    font-size: 40px;
+  }
+  .main-servicios {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .parrafo-servicio {
+    font-size: 25px;
+    width: 100%;
+  }
+  .img-servicio-ejemplo {
+    border-radius: 30px;
+    mask-image: linear-gradient(white 80%, transparent);
+  }
+}
 .footer {
   width: 100%;
   background-color: #3c3c3c;

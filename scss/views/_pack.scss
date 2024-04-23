@@ -1,12 +1,16 @@
+.flecha-back-nav{
+        text-decoration: none;
+        color: $color-primary;
+}
+.nav-pack{
+    background-color: $color-secondary;
+}
+.img-nav-pack{
+    width: 40px;
+}
 .at-home{
     background-color: $color-primary;
     color: $color-secondary; 
-}
-.list-pack{
-    list-style: none;
-}
-.list-pack li::before{
-content: "▫️";
 }
 .h1-pack{
     display: flex;
@@ -14,4 +18,32 @@ justify-content: center;
 color: pink;
 text-decoration: underline;
 font-family: lora, sans-serif;
+}
+.div-pack-h1{
+    display: grid;
+    justify-content: center;
+}
+.div-packs{
+    display: grid;
+    justify-content: flex-start;
+}
+.list-pack{
+    list-style: none;
+}
+.list-pack li::before{
+content: "▫️";
+}
+//modificacion para los media queries
+@include for-destok-up{
+    .section-pack{
+        display: grid;
+        justify-content: center;
+    }
+    .div-packs{
+        display: grid;
+        justify-content: flex-start;
+    }
+.img-nav-pack{
+    width: 50px;
+}
 }

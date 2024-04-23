@@ -73,6 +73,21 @@
     color: pink;
     font-family: lora, sans-serif;
 }
+.section-encuesta{
+    background-color: $color-primary;
+    display: grid;
+    justify-content: center;
+    color: $color-secondary;
+}
+.div-encuesta{
+    display: grid;
+    justify-content: center;
+    a{
+        font-size: 150%;
+        display: flex;
+        justify-content: center;
+    }
+}
 //modificaciones para media query 768px
 @include for-destok-up{
 .section-corporativos{
