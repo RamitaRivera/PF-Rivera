@@ -13,6 +13,11 @@
   background-color: #f8f6f6;
 }
 
+.header-encuesta {
+  display: grid;
+  align-items: flex-start;
+}
+
 .list {
   list-style: none;
   padding: 0;
@@ -76,7 +81,7 @@ header {
 }
 
 .foto-corporativo {
-  width: 300px;
+  height: 300px;
 }
 
 .section-fiesta {
@@ -85,7 +90,7 @@ header {
 }
 
 .foto-fiesta {
-  width: 300px;
+  height: 300px;
   mask-image: linear-gradient(white 80%, transparent);
 }
 
@@ -137,8 +142,8 @@ header {
   background-color: #000;
   border-radius: 5%;
   display: grid;
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
   align-items: center;
   justify-content: center;
   color: #fff;
@@ -238,19 +243,6 @@ header {
     font-size: 18px;
   }
 }
-.flecha-back-nav {
-  text-decoration: none;
-  color: #000;
-}
-
-.nav-pack {
-  background-color: #fff;
-}
-
-.img-nav-pack {
-  width: 40px;
-}
-
 .at-home {
   background-color: #000;
   color: #fff;
@@ -262,6 +254,10 @@ header {
   color: pink;
   text-decoration: underline;
   font-family: lora, sans-serif;
+}
+
+.img-h1 {
+  width: 300px;
 }
 
 .div-pack-h1 {
@@ -291,8 +287,8 @@ header {
     display: grid;
     justify-content: flex-start;
   }
-  .img-nav-pack {
-    width: 50px;
+  .img-h1 {
+    width: 500px;
   }
 }
 .body-encuesta {
@@ -327,7 +323,9 @@ header {
 }
 
 .footer-formulario {
-  height: 250px;
+  background-color: #fff;
+  color: #000;
+  height: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -354,6 +352,7 @@ header {
     font-size: 25px;
   }
   .footer-formulario {
+    height: 150px;
     font-size: 40px;
   }
   .footer-ig {

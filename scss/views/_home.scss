@@ -7,14 +7,14 @@
     justify-content: center;
 }
 .foto-corporativo{
-    width: 300px;
+    height: 300px;
 }
 .section-fiesta{
     display: flex;
     flex-direction: column-reverse;
 }
 .foto-fiesta{
-    width: 300px;
+    height: 300px;
     mask-image: linear-gradient(white 80%, transparent);
 }
 .div-fiesta-img{
@@ -58,8 +58,8 @@
     background-color: $color-primary;
     border-radius: 5%;
     display: grid;
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     align-items: center;
     justify-content: center;
     color: $color-secondary;
@@ -88,6 +88,7 @@
         justify-content: center;
     }
 }
+
 //modificaciones para media query 768px
 @include for-destok-up{
 .section-corporativos{
